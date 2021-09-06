@@ -9,9 +9,13 @@ const InitialTodos = [
 ];
 const TodoApp = () => {
   const [todos, setTodos] = useState(InitialTodos);
+
+  const addTodo = (todo) => {
+    setTodos([...todos, { id: 4, text: todo, completed: false }]);
+  };
   return (
     <div>
-      <TodoForm />
+      <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} />
     </div>
   );

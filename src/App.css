@@ -219,10 +219,11 @@ button.delete {
   width: unset;
   line-height: 1.2rem;
   margin: 0 0.5rem;
-  color: brown;
+  color: white;
   border: 0;
   box-shadow: rgb(0 0 0 / 33%) 0px 3px 8px;
   transition: box-shadow 0.7s;
+  letter-spacing: 2px;
 }
 button.edit:hover,
 button.delete:hover {
